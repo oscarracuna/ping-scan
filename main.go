@@ -6,6 +6,9 @@ import (
 	//"net"
 )
 
+// TODO:
+// Figure out how to cast last octet from string to int so you can
+// do something like: last_octet++ and ping until you reach 255
 func main() {
 	var ipRange int
 
@@ -24,7 +27,7 @@ func main() {
 	//use it to get the last octet by using its index [3]
 	if firstIP_octets[3] != "0" {
 		ipRange = 0
-	} else {
+	} else { //This else doesn't make much sense but
 		ipRange = 0
 	}
 
